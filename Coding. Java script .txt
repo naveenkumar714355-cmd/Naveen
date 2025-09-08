@@ -1,0 +1,15 @@
+// Console message
+console.log("Resume Loaded Successfully!");
+
+// Highlight skills when clicked
+document.addEventListener("DOMContentLoaded", () => {
+  const skills = document.querySelectorAll("#skills p");
+
+  skills.forEach(skill => {
+    skill.addEventListener("click", () => {
+      skill.style.backgroundColor = "#dff9fb";
+      skill.style.padding = "5px";
+      skill.style.borderRadius = "5px";
+    });
+  });
+});
